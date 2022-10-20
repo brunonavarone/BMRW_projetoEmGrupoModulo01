@@ -6,7 +6,7 @@
 
 :root
 {
-    --corAzul01: #000244;
+    --corAzul01: #040421;
     --corAzul02:#001173;
     --corAzul03:#0130BC;
     --corAzul04:#0054CE;
@@ -17,7 +17,7 @@
 
 body
 {
-    background-color: var(--corAzul01);
+    background-image: url(/Image/bg_image_2.png);
 }
 
 #body-inicial
