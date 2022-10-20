@@ -1,0 +1,48 @@
+body{
+    background-image: url(/Image/Background.png);
+    background-size: 100vw;
+    display: flex;
+    
+}
+
+h1, h2{
+    color: #fff;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: 150px; 
+}
+
+.subtitle{
+    height: 300px;
+    width: 500px;
+    margin:auto;
+    
+}
+
+body a{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(238, 8, 211);
+    border-radius: 40px;
+    margin: 20px;
+    border: solid;
+    border-width: 20px;
+    border-color: rgb(238, 8, 211);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
