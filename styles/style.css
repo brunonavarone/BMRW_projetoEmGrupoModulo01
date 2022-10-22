@@ -6,13 +6,21 @@
 
 :root
 {
-    --corAzul01: #040421;
-    --corAzul02:#001173;
+    --corHeader: #e9e9f8;
+    --corTextoHeader:#000000;
+    --corTextoMain:#e9e9f8;
     --corAzul03:#0130BC;
     --corAzul04:#0054CE;
     --corVermelho02: #450721;
     --corVermelho01: #8E1A0B;
     --corLaranja01: #E95D18;
+    /*--corHeader: #040421;
+    --corAzul02:#001173;
+    --corAzul03:#0130BC;
+    --corAzul04:#0054CE;
+    --corVermelho02: #450721;
+    --corVermelho01: #8E1A0B;
+    --corLaranja01: #E95D18;*/
 }
 
 body
@@ -29,27 +37,27 @@ body
 
 header
 {
-    background-color: var(--corAzul02);
+    background-color: var(--corHeader);
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 header img
 {
     max-width: 400px;
 }
 
-header nav
+header img
 {
-    background-color: var(--corAzul03);
-    align-self: flex-end;
-    
+    width: 45%;
 }
 
 header nav ul 
 {
     display: flex;
-    
+    gap: 20px;
+    justify-content: space-between;
+    margin-right: 100px;
 }
 
 header nav ul li
@@ -60,7 +68,16 @@ header nav ul li
 header nav ul a 
 {
     text-decoration: none;
-    color: #fff;
+    color: var(--corTextoHeader);
+    font-size: 1.2em;
+    
+    
+}
+main h1
+{
+    color: var(--corTextoMain);
+    text-align: center;
+    margin: 20px 0px;
 }
 
 .title h1, h2
@@ -89,8 +106,8 @@ header nav ul a
     max-width: 800px;
     margin: auto;
     margin-top: 150px; 
-    
 }
+
 .title a
 {
     max-width: 100px;
