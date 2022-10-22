@@ -19,6 +19,8 @@
     --corCartoes: var(--corHeader);
     --corBackground: #171834;
     --corTextoCartoes: (--corTextoHeader);
+    --corSombraNeon: #7a9bfc;
+    --corSombraNeonHover: #98fc7a;
     --corAzul03:#0130BC;
     --corAzul04:#0054CE;
     --corVermelho02: #450721;
@@ -29,6 +31,7 @@
 
 body
 {
+    width: 100vw;
     background-color: var(--corBackground);
     font-family: 'Ocsquare';
 }
@@ -41,7 +44,9 @@ body
 }
 
 header
-{
+{   
+    width: 100vw;
+    min-width: 100vw;
     height: 100px;
     background-color: var(--corHeader);
     display: flex;
@@ -58,6 +63,7 @@ header nav
 {
     display: flex;
     align-items: center;
+    
 }
 
 header nav img
@@ -99,18 +105,28 @@ main h1
 {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cartoes
 {
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--corCartoes);
     border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px var(--corSombraNeon);
     padding: 10px 25px;
+    margin: 0px 5px;
+    margin-bottom: 40px;
    
+}
+
+.cartoes:hover
+{
+    box-shadow: 0px 0px 30px 5px var(--corSombraNeonHover);
 }
 
 .cartoes h3
