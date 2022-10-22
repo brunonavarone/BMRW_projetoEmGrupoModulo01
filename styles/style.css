@@ -1,3 +1,10 @@
+@font-face {
+    font-family:'Ocsquare';
+    src: url(/fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(/fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *
 {
     margin: 0px;
@@ -23,6 +30,7 @@
 body
 {
     background-color: var(--corBackground);
+    font-family: 'Ocsquare';
 }
 
 #body-inicial
@@ -90,7 +98,7 @@ main h1
 .container-cartoes
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .cartoes
@@ -101,7 +109,7 @@ main h1
     align-items: center;
     background-color: var(--corCartoes);
     border-radius: 20px;
-    padding: 0px 25px;
+    padding: 10px 25px;
    
 }
 
