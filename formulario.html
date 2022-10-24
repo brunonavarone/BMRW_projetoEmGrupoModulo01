@@ -23,6 +23,78 @@
     </header>
     <main>
         <h1>FORMULÁRIO</h1>
+        <section class="contato-formulario-container">
+            <div class="container-formulario">
+                <form action="#">
+                    <div class="header-formulario">
+                        <div class="titulo-formulairo">
+                            <h2>Fale Conosco</h2>
+                        </div>
+                        <div class="botao-ajuda-formulario">
+                            <button><a href="#">AJUDA</a></button>
+                        </div>
+                    </div>
+                    <div class="grupo-input">
+                        <div class="caixa-input">
+                            <label for="primeiroNome">Primeiro Nome</label>
+                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Insira seu primeiro nome" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="sobreNome">Sobrenome</label>
+                            <input id="sobreNome" type="text" name="sobreNome" placeholder="Insira seu sobrenome" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Insira seu E-mail" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="numero">Celular</label>
+                            <input id="numero" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                    </div>
+                    <div class="caixa-motivoContato">
+                        <div class="titulo-motivoContato">
+                            <h4>Motivo do contato</h4>
+                        </div>
+                        <div class="grupo-motivoContato">
+                            <div class="input-motivoContato">
+                                <input type="radio" id="garantia" name="motivocontato">
+                                <label for="garantia">Garantia</label>
+                            </div>
+
+                            <div class="input-motivoContato">
+                                <input type="radio" id="problemasTecnicos" name="motivocontato">
+                                <label for="problemasTecnicos">Problemas Técnicos</label>
+                            </div>
+
+                            <div class="input-motivoContato">
+                                <input type="radio" id="sugestoes" name="motivocontato">
+                                <label for="sugestoes">Sugestões</label>
+                            </div>
+                            
+                            <div class="input-motivoContato">
+                                <input type="radio" id="reclamacoes" name="motivocontato">
+                                <label for="reclamacoes">Reclamações</label>
+                            </div>
+
+                            <div class="input-motivoContato">
+                                <input type="radio" id="outros" name="motivocontato">
+                                <label for="outros">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo-textoCliente">
+                        <div class="textoCliente">
+                            <label>Escreva aqui a sua mensagem</label>
+                            <textarea name="mensagem"></textarea>
+                        </div>
+                    </div>    
+                    <div class="botao-enviar">
+                        <button><a href="#">Enviar</a></button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

@@ -9,38 +9,31 @@
 {
     margin: 0px;
     padding: 0px;
+    
 }
 
 :root
 {
     --corHeader: #f6f6fc;
-    --corTextoHeader:#000000;
-    --corTextoMain: var(--corHeader);
-    --corCartoes: var(--corHeader);
+    --corTextoClaro: #f6f6fc;
+    --corTextoEscuro:#171834;
+    --corTextoMain: var(--corTextoClaro);
+    --corCartoes: var(--corTextoClaro);
     --corBackground: #171834;
-    --corTextoCartoes: (--corTextoHeader);
+    --corTextoCartoes: (--corTextoEscuro);
+    --corBotoesHover: #1e3e9e;
     --corSombraNeon: #7a9bfc;
     --corSombraNeonHover: #98fc7a;
-    --corAzul03:#0130BC;
-    --corAzul04:#0054CE;
-    --corVermelho02: #450721;
-    --corVermelho01: #8E1A0B;
-    --corLaranja01: #E95D18;
-   
+    --corSombraEscura: var(--corBackground);
+    --corInputHover: #cfcffd49;
 }
 
+/*CONFIGURAÇÕES PADRÃO DE TODAS AS PAGINAS*/
 body
 {
-    width: 100vw;
+    
     background-color: var(--corBackground);
     font-family: 'Ocsquare';
-}
-
-#body-inicial
-{
-    background-image: url(/image/Background.png);
-    background-size: 100vw;
-    display: flex;
 }
 
 header
@@ -87,7 +80,7 @@ header nav ul li
 header nav ul a 
 {
     text-decoration: none;
-    color: var(--corTextoHeader);
+    color: var(--corTextoEscuro);
     font-size: 1.4em;
     
 }
@@ -107,6 +100,54 @@ main h1
     
 }
 
+/*PRIMEIRA PAGINA*/
+#body-inicial
+{
+    background-image: url(/image/Background.png);
+    background-size: 100vw;
+    display: flex;
+}
+
+.title h1, h2
+{
+    color: #fff;
+}
+
+.title h2
+{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title h2
+{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 150px; 
+}
+
+.title a
+{
+    max-width: 100px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(238, 8, 211);
+    border-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/*PAGINA DE PRODUTOS*/
 .container-cartoes
 {
     display: flex;
@@ -149,45 +190,191 @@ main h1
    
 }
 
-.title h1, h2
+/*PAGINA DE FORMULARIO*/
+.contato-formulario-container
 {
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.title h2
+.container-formulario
 {
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 45vw;
+    min-width: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px var(--corSombraNeon);
+    background-color: var(--corHeader);
+    border-radius: 4px;
+    padding: 2rem;
 }
 
-.title h2
+.header-formulario
 {
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.title
+.header-formulario h2
+{
+    color: var(--corTextoEscuro);
+}
+
+.botao-ajuda-formulario
+{
+    display: flex;
+    align-items: center;
+}
+
+.botao-ajuda-formulario button
+{
+    border: none;
+    background-color: var(--corBackground);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.botao-ajuda-formulario button:hover
+{
+    background-color: var(--corBotoesHover);
+    cursor: pointer;
+    
+}
+
+.botao-ajuda-formulario a 
+{
+    text-decoration: none;
+    color: var(--corTextoClaro);
+    font-weight: 500;
+}
+
+.grupo-input
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+.caixa-input
 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 150px; 
+    padding: 0.5rem;
 }
 
-.title a
+.caixa-input input
 {
-    max-width: 100px;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    background-color: rgb(238, 8, 211);
-    border-radius: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    margin: 0.4rem 0;
+    padding: 0.5rem 0.6rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px var(--corSombraEscura);
 }
 
+.caixa-input input:hover
+{
+    background-color: var(--corInputHover);
+}
+
+.caixa-input input:focus-visible
+{
+    outline: 1.8px solid var(--corBackground);
+}
+
+.caixa-input label, .titulo-motivoContato h4
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--corTextoEscuro);
+}
+
+.caixa-input input::placeholder
+{
+    color: var(--corTextoEscuro);
+}
+
+.grupo-motivoContato
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+    padding: 0 0.5rem;
+}
+
+.input-motivoContato
+{
+    display: flex;
+    align-items: center;
+}
+
+.input-motivoContato input
+{
+    margin-right: 0.3rem;
+}
+
+.input-motivoContato input label
+{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--corTextoEscuro);
+}
+
+.textoCliente label
+{
+    margin-top: 0.6rem;
+    font-size: 1.05rem;
+}
+
+.textoCliente textarea
+{
+    box-shadow: 1px 1px 6px var(--corSombraEscura);
+    border-radius: 10px;
+    border: none;
+    margin-top: 0.5rem;
+    resize: none;
+    height: 10rem;
+}
+
+.textoCliente textarea:focus-visible
+{
+    outline: 1.8px solid var(--corBackground);
+}
+
+.textoCliente
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-enviar button 
+{
+    width: 30%;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: var(--corBackground);
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-enviar button:hover
+{
+    background-color: var(--corBotoesHover)
+}
+
+.botao-enviar button a
+{
+    text-decoration: none;
+    color: var(--corTextoClaro);
+    font-weight: 500px;
+}
+
+/*PARTE DE RESPONSIVIDADE*/
 @media (max-width: 700px)
 {
     header nav ul
