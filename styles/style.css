@@ -1,15 +1,14 @@
-@font-face {
+@font-face
+{
     font-family:'Ocsquare';
     src: url(/fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(/fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 *
 {
     margin: 0px;
     padding: 0px;
-    
 }
 
 :root
@@ -82,7 +81,6 @@ header nav ul a
     text-decoration: none;
     color: var(--corTextoEscuro);
     font-size: 1.4em;
-    
 }
 
 header nav ul a:hover
@@ -97,7 +95,6 @@ main h1
     color: var(--corTextoMain);
     text-align: center;
     margin: 30px 0px;
-    
 }
 
 /*PRIMEIRA PAGINA*/
@@ -157,7 +154,7 @@ main h1
 
 .cartoes
 {
-    height: 320px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,7 +165,6 @@ main h1
     padding: 10px 25px;
     margin: 0px 5px;
     margin-bottom: 40px;
-   
 }
 
 .cartoes:hover
@@ -187,8 +183,27 @@ main h1
 .cartoes img
 {
     max-width: 200px;
-   
 }
+
+.todos-produtos .cartoes 
+{
+    height: 270px;
+    justify-content: space-between;
+}
+
+.todos-produtos .cartoes img
+{
+    max-width: 150px;
+}
+
+.todos-produtos h2
+{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
 
 /*PAGINA DA NOSSA EQUIPE*/
 .container-equipe
@@ -207,6 +222,8 @@ main h1
     align-items: center;
     padding: 10px 20px;
     border-radius: 10px;
+    margin: 0 10px;
+    margin-bottom: 40px;
 }
 
 .cartoes-equipe h3
@@ -279,7 +296,6 @@ main h1
 {
     background-color: var(--corBotoesHover);
     cursor: pointer;
-    
 }
 
 .botao-ajuda-formulario a 
@@ -409,6 +425,29 @@ main h1
     text-decoration: none;
     color: var(--corTextoClaro);
     font-weight: 500px;
+}
+
+footer
+{
+    margin-top: 30px;
+    background-color: var(--corHeader);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-textos-footer
+{
+    color: var(--corTextoEscuro);
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: justify;
+}
+
+.logo-footer
+{
+    max-width: 150px;
+    padding: 0.7em;
 }
 
 /*PARTE DE RESPONSIVIDADE*/
