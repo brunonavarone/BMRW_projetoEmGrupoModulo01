@@ -190,6 +190,43 @@ main h1
    
 }
 
+/*PAGINA DA NOSSA EQUIPE*/
+.container-equipe
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cartoes-equipe
+{
+    background-color: var(--corHeader);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.cartoes-equipe h3
+{
+    margin-bottom: 10px;
+}
+
+.cartoes-equipe img
+{
+    filter: grayscale(100%) blur(7px);
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cartoes-equipe img:hover
+{
+    filter: grayscale(0%);
+}
+
 /*PAGINA DE FORMULARIO*/
 .contato-formulario-container
 {
