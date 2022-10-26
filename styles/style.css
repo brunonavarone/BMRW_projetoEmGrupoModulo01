@@ -345,6 +345,27 @@ main h1
     box-shadow: 1px 1px 6px var(--corSombraEscura);
 }
 
+.alinhamento-input 
+{
+   display: flex;
+   align-items: center;
+}
+
+.alinhamento-input img
+{
+    margin-left: 5px;
+}
+
+.caixa-input.sucesso input
+{
+    border: 3px solid #4ECA64;
+}
+
+.caixa-input.erro input
+{
+    border: 3px solid #D84A4A;
+}
+
 .caixa-input input:hover
 {
     background-color: var(--corInputHover);
@@ -443,6 +464,7 @@ main h1
     font-weight: 500px;
 }
 
+/**/
 footer
 {
     margin-top: 30px;
