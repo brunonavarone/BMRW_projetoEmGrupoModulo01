@@ -9,6 +9,7 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box ;
 }
 
 :root
@@ -33,6 +34,7 @@ body
     
     background-color: var(--corBackground);
     font-family: 'Ocsquare';
+   /* height: 100vh;*/
 }
 
 header
@@ -231,7 +233,7 @@ main h1
     margin-bottom: 10px;
 }
 
-.cartoes-equipe img
+.cartoes-equipe .foto-mib
 {
     filter: grayscale(100%) blur(7px);
     max-width: 200px;
@@ -242,6 +244,20 @@ main h1
 .cartoes-equipe img:hover
 {
     filter: grayscale(0%);
+}
+
+.caixa-logos-redesociais
+{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caixa-logos-redesociais img
+{
+    max-width: 40px;
 }
 
 /*PAGINA DE FORMULARIO*/
@@ -327,6 +343,27 @@ main h1
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px var(--corSombraEscura);
+}
+
+.alinhamento-input 
+{
+   display: flex;
+   align-items: center;
+}
+
+.alinhamento-input img
+{
+    margin-left: 5px;
+}
+
+.caixa-input.sucesso input
+{
+    border: 3px solid #4ECA64;
+}
+
+.caixa-input.erro input
+{
+    border: 3px solid #D84A4A;
 }
 
 .caixa-input input:hover
@@ -427,6 +464,7 @@ main h1
     font-weight: 500px;
 }
 
+/**/
 footer
 {
     margin-top: 30px;
@@ -451,7 +489,8 @@ footer
 }
 
 /*PARTE DE RESPONSIVIDADE*/
-@media (max-width: 700px)
+
+/*@media (max-width: 700px)
 {
     header nav ul
     {
@@ -497,4 +536,4 @@ footer
     {
         margin-left: 20px;
     }
-}
+}*/
