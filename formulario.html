@@ -18,14 +18,14 @@
                 <li><a href="nossaEquipe.html">Equipe</a></li>
                 <li><a href="formulario.html">Contato</a></li>
             </ul>
-            <img src="image/icone carrinho.png" alt="">
+            <!--<img src="image/icone carrinho.png" alt="">-->
         </nav>
     </header>
     <main>
         <h1>FORMULÁRIO</h1>
         <section class="contato-formulario-container">
             <div class="container-formulario">
-                <form action="#">
+                <form class="form" id="form" action="#">
                     <div class="header-formulario">
                         <div class="titulo-formulairo">
                             <h2>Fale Conosco</h2>
@@ -37,19 +37,26 @@
                     <div class="grupo-input">
                         <div class="caixa-input">
                             <label for="primeiroNome">Primeiro Nome</label>
-                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Insira seu primeiro nome" required>
+                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Insira seu primeiro nome">
+                            <i><img src="Image/success-icon.svg" alt=""></i>
+                            <i><img src="Image/error-icon.svg" alt=""></i>
                         </div>
                         <div class="caixa-input">
                             <label for="sobreNome">Sobrenome</label>
-                            <input id="sobreNome" type="text" name="sobreNome" placeholder="Insira seu sobrenome" required>
+                            <input id="sobreNome" type="text" name="sobreNome" placeholder="Insira seu sobrenome">
+                            <i><img src="Image/success-icon.svg" alt=""></i>
+                            <i><img src="Image/error-icon.svg" alt=""></i>
                         </div>
                         <div class="caixa-input">
                             <label for="email">E-mail</label>
-                            <input id="email" type="email" name="email" placeholder="Insira seu E-mail" required>
+                            <input id="email" type="email" name="email" placeholder="Insira seu E-mail">
+                            <i><img src="Image/success-icon.svg" alt=""></i>
+                            <i><img src="Image/error-icon.svg" alt=""></i>
                         </div>
                         <div class="caixa-input">
                             <label for="numero">Celular</label>
                             <input id="numero" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx">
+                            
                         </div>
                     </div>
                     <div class="caixa-motivoContato">
@@ -96,5 +103,14 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="caixa-textos-footer">
+            <p>Desenvolvedores: Bruno Henrique da Silva Travessa, Marcos Antonio Vieira Clementino, Ronlado Rodrigues de Figueiredo, Weslley da Silva Santos.<br>Projeto em grupo do Módulo 1 do curso capacitação em Desenvolvimento Full Stack, pela plataforma Resilia, pelo projeto social da Prefeitura do Rio de Janeiro, Programadores Cariocas.</p>
+            <p>Todas a imagens e informações utilizadas de terceiros, são única e exclusivamente para fins acadêmicos.</p>
+        </div>
+        <div class="caixa-imagens-footer">
+            <img class="logo-footer" src="Image/logo bmrw preta.png" alt="">
+        </div>
+    </footer>
 </body>
 </html>
