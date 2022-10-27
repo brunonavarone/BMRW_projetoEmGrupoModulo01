@@ -21,7 +21,6 @@
             <!--<img src="image/icone carrinho.png" alt="">-->
         </nav>
     </header>
-    <button class="botao-iluminacao">Alterar iluminção</button>
     <main>
         <h1>MAIS VENDIDOS</h1>
         <section class="mais-vendidos">
@@ -47,6 +46,55 @@
                     <h3>R$ 599,00</h3>
                 </div>
             </div>
+        </section>
+        <section>
+                <div class="slider">
+                    <div class="slides">
+                        <!--botoes radio-->
+                        <input type="radio" name="radio-botao" id="radio1">
+                        <input type="radio" name="radio-botao" id="radio2">
+                        <input type="radio" name="radio-botao" id="radio3">
+                        <input type="radio" name="radio-botao" id="radio4">
+                        <input type="radio" name="radio-botao" id="radio5">
+                        <!--Fim botoes radio-->
+
+                        <!--imagens-->
+                        <div class="slide primeiro">
+                            <img src="image/carrossel_blackfriday.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/carrossel_garantia.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/carrossel_novidade.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/carrossel_ps5.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="image/carrossel_senacResilia.png" alt="">
+                        </div>
+                        <!--Fim imagens-->
+
+                        <!--Navegação automática-->
+                        <div class="navegacao-automatica">
+                            <div class="botao-automatico1"></div>
+                            <div class="botao-automatico2"></div>
+                            <div class="botao-automatico3"></div>
+                            <div class="botao-automatico4"></div>
+                            <div class="botao-automatico5"></div>
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="manual-navegacao">
+                        <label for="radio1" class="manual-botao"></label>
+                        <label for="radio2" class="manual-botao"></label>
+                        <label for="radio3" class="manual-botao"></label>
+                        <label for="radio4" class="manual-botao"></label>
+                        <label for="radio5" class="manual-botao"></label>
+                    </div>
+                </div>
+
         </section>
         <section class="todos-produtos">
             <h2>Todos nossos produtos</h2>
@@ -94,5 +142,6 @@
             <img class="logo-footer" src="Image/logo bmrw preta.png" alt="">
         </div>
     </footer>
+    <script src="scripts/script_carrossel.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*importando as fonts que vão ser utilizadas*/
 @font-face
 {
     font-family:'Ocsquare';
@@ -5,6 +6,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*resetando algumas informações iniciais da pagina*/
 *
 {
     margin: 0px;
@@ -12,6 +15,7 @@
     box-sizing: border-box ;
 }
 
+/*area de criação de variaveis - utilizada para auxiliar a criação do dark-mode/light-mode*/
 :root
 {
     --corHeader: #f6f6fc;
@@ -26,6 +30,7 @@
     --corSombraNeonHover: #98fc7a;
     --corSombraEscura: var(--corBackground);
     --corInputHover: #cfcffd49;
+    --imagemLogo: url(image/logo bmrw preta.png);
 }
 
 
@@ -35,7 +40,7 @@ body
     
     background-color: var(--corBackground);
     font-family: 'Ocsquare';
-   /* height: 100vh;*/
+   
 }
 
 header
@@ -93,14 +98,6 @@ header nav ul a:hover
     font-size: x-large;
 }
 
-.botao-iluminacao
-{
-    padding: 10px 10px;
-    color: var(--corTextoEscuro);
-    font-size: 18px;
-    font-weight: 800;
-}
-
 main h1
 {
     color: var(--corTextoMain);
@@ -146,6 +143,7 @@ main h1
 
 .title a
 {
+    text-align: center;
     max-width: 100px;
     padding: 10px;
     color: #fff;
@@ -155,6 +153,30 @@ main h1
     font-family: 'Ocsquare';
 }
 
+/*PAGINA QUEM SOMOS*/
+.quemSomos-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.quemSomos-container img
+{
+    width: 50%;
+    max-width: 500px;
+}
+
+.quemSomos-container p
+{
+    text-align: justify;
+    color: var(--corTextoClaro);
+    width: 60%;
+    max-width: 600px;
+}
 /*PAGINA DE PRODUTOS*/
 .container-cartoes
 {
@@ -194,6 +216,146 @@ main h1
 .cartoes img
 {
     max-width: 200px;
+}
+/*area do carrossel*/
+.slider
+{
+    margin: 50px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides
+{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input
+{
+    display: none;
+}
+
+.slide
+{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img
+{
+    width: 800px;
+}
+
+.manual-navegacao
+{
+    position: absolute;
+    width: 800px;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-botao
+{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-botao:hover
+{
+    background-color: var(--corBackground);
+}
+
+.manual-botao:not(:last-child)
+{
+   margin-right: 30px;
+}
+
+#radio1:checked ~ .primeiro
+{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiro
+{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro
+{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro
+{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .primeiro
+{
+    margin-left: -100%;
+}
+
+.navegacao-automatica div 
+{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao-automatica
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 330px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-automatica div:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navegacao-automatica .botao-automatico1
+{
+    background-color: var(--corBackground);
+}
+
+#radio2:checked ~ .navegacao-automatica .botao-automatico2
+{
+    background-color: var(--corBackground);
+}
+
+#radio3:checked ~ .navegacao-automatica .botao-automatico3
+{
+    background-color: var(--corBackground);
+}
+
+#radio4:checked ~ .navegacao-automatica .botao-automatico4
+{
+    background-color: var(--corBackground);
+}
+
+#radio5:checked ~ .navegacao-automatica .botao-automatico5
+{
+    background-color: var(--corBackground);
+}
+
+/*fim da area do carrossel*/
+
+.todos-produtos
+{
+    
 }
 
 .todos-produtos .cartoes 
@@ -518,23 +680,6 @@ footer
     max-width: 150px;
     padding: 0.7em;
 }
-
-/*:root
-{
-    --corHeader: #171834;
-    --corTextoClaro: #171834;
-    --corTextoEscuro:#f6f6fc;
-    --corTextoMain: var(--corTextoClaro);
-    --corCartoes: var(--corTextoClaro);
-    --corBackground: #f6f6fc;
-    --corTextoCartoes: #f6f6fc;
-    --corBotoesHover: #072377;
-    --corSombraNeon: #7a9bfc;
-    --corSombraNeonHover: #218004;
-    --corSombraEscura: var(--corBackground);
-    --corInputHover: #f7e9e9ac;
-}*/
-
 
 /*PARTE DE RESPONSIVIDADE*/
 
