@@ -361,8 +361,8 @@ main h1
 {
     visibility: visible;
     position: relative;
-    bottom: 35px;
-    left: 197px;
+    bottom: 50px;
+    left: 198px;
 }
 
 .caixa-input.erro input
@@ -374,8 +374,21 @@ main h1
 {
     visibility: visible;
     position: relative;
-    bottom: 60px;
-    left: 195px;
+    bottom: 73.5px;
+    left: 197px;
+}
+
+.caixa-input small
+{
+    visibility: hidden;
+}
+
+
+.caixa-input.erro small
+{
+    visibility: visible;
+    color: #b82b2b;
+    font-size: 16px;
 }
 
 .caixa-input input:hover

@@ -20,10 +20,12 @@ function verificaInputs()
      const valorEmail = email.value.trim();
      const valorCelular = celular.value.trim();
 
+     verificaNomes = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
+
     //verificando se o usuario digitou alguma coisa
      if(valorPrimeiroNome === '')
      {
-        validandoErro(primeiroNome);
+        validandoErro(primeiroNome, "Preencha o campo");
      }
      else
      {
@@ -32,7 +34,7 @@ function verificaInputs()
 
      if(valorSobreNome === '')
      {
-        validandoErro(sobreNome);
+        validandoErro(sobreNome, "Preencha o campo");
      }
      else
      {
@@ -41,7 +43,7 @@ function verificaInputs()
 
      if(valorEmail === '')
      {
-        validandoErro(email);
+        validandoErro(email, "Preencha o campo");
      }
      else
      {
@@ -50,7 +52,7 @@ function verificaInputs()
 
      if(valorCelular === '')
      {
-        validandoErro(celular);
+        validandoErro(celular, "Preencha o campo");
      }
      else
      {
@@ -58,9 +60,12 @@ function verificaInputs()
      }
 }
 
-function validandoErro(input)
+function validandoErro(input, mensagem)
 {
     const caixaInput = input.parentElement;
+    const small = caixaInput.querySelector('small')
+
+    small.innerText = mensagem;
 
     caixaInput.className = "caixa-input erro";
 }
