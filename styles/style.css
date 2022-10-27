@@ -173,6 +173,7 @@ main h1
 .quemSomos-container p
 {
     text-align: justify;
+    font-size: 1.5em;
     color: var(--corTextoClaro);
     width: 60%;
     max-width: 600px;
@@ -218,9 +219,16 @@ main h1
     max-width: 200px;
 }
 /*area do carrossel*/
+.container-carrossel
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .slider
 {
-    margin: 50px auto;
+    
     width: 800px;
     height: 400px;
     overflow: hidden;
@@ -352,11 +360,6 @@ main h1
 }
 
 /*fim da area do carrossel*/
-
-.todos-produtos
-{
-    
-}
 
 .todos-produtos .cartoes 
 {
