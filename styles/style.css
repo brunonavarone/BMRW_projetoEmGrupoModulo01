@@ -345,25 +345,37 @@ main h1
     box-shadow: 1px 1px 6px var(--corSombraEscura);
 }
 
-.alinhamento-input 
+.caixa-input i
 {
-   display: flex;
-   align-items: center;
-}
-
-.alinhamento-input img
-{
-    margin-left: 5px;
+    visibility: hidden;
+    
+    
 }
 
 .caixa-input.sucesso input
 {
-    border: 3px solid #4ECA64;
+    border: 2.5px solid #4ECA64;
+}
+
+.caixa-input.sucesso i .icone-sucesso
+{
+    visibility: visible;
+    position: relative;
+    bottom: 35px;
+    left: 197px;
 }
 
 .caixa-input.erro input
 {
-    border: 3px solid #D84A4A;
+    border: 2.5px solid #D84A4A;
+}
+
+.caixa-input.erro i .icone-erro
+{
+    visibility: visible;
+    position: relative;
+    bottom: 60px;
+    left: 195px;
 }
 
 .caixa-input input:hover
@@ -441,7 +453,7 @@ main h1
     flex-direction: column;
 }
 
-.botao-enviar button 
+.botao-enviar 
 {
     width: 30%;
     margin-top: 1.5rem;
@@ -450,19 +462,14 @@ main h1
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--corHeader);
 }
 
-.botao-enviar button:hover
+.botao-enviar:hover
 {
     background-color: var(--corBotoesHover)
 }
 
-.botao-enviar button a
-{
-    text-decoration: none;
-    color: var(--corTextoClaro);
-    font-weight: 500px;
-}
 
 /**/
 footer

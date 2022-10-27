@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
     <title>Formulário</title>
 </head>
 <body>
@@ -35,37 +34,29 @@
                         </div>
                     </div>
                     <div class="grupo-input">
-                        <div class="caixa-input sucesso">
+                        <div class="caixa-input">
                             <label for="primeiroNome">Primeiro Nome</label>
-                            <div class="alinhamento-input">
-                                <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Insira seu primeiro nome">
-                                <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
-                                <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
-                            </div>
+                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Insira seu primeiro nome">
+                            <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
+                            <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
                         </div>
-                        <div class="caixa-input erro">
+                        <div class="caixa-input">
                             <label for="sobreNome">Sobrenome</label>
-                            <div class="alinhamento-input">
-                                <input id="sobreNome" type="text" name="sobreNome" placeholder="Insira seu sobrenome">
-                                <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
-                                <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
-                            </div>
+                            <input id="sobreNome" type="text" name="sobreNome" placeholder="Insira seu sobrenome">
+                            <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
+                            <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
                         </div>
                         <div class="caixa-input">
                             <label for="email">E-mail</label>
-                            <div class="alinhamento-input">
-                                <input id="email" type="email" name="email" placeholder="Insira seu E-mail">
-                                <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
-                                <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
-                            </div>
+                            <input id="email" type="email" name="email" placeholder="Insira seu E-mail">
+                            <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
+                            <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
                         </div>
                         <div class="caixa-input">
                             <label for="numero">Celular</label>
-                            <div class="alinhamento-input">
-                                <input id="numero" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx">
-                                <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
-                                <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
-                            </div>
+                            <input id="numero" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx">
+                            <i><img class="icone-sucesso" src="Image/success-icon.svg" alt=""></i>
+                            <i><img class="icone-erro" src="Image/error-icon.svg" alt=""></i>
                         </div>
                     </div>
                     <div class="caixa-motivoContato">
@@ -105,9 +96,7 @@
                             <textarea name="mensagem"></textarea>
                         </div>
                     </div>    
-                    <div class="botao-enviar">
-                        <button onclick="validaEmail()">Enviar</button>
-                    </div>
+                    <button class="botao-enviar" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -121,5 +110,6 @@
             <img class="logo-footer" src="Image/logo bmrw preta.png" alt="">
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
