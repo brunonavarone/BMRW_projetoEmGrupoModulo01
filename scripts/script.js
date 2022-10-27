@@ -20,25 +20,51 @@ function verificaInputs()
      const valorEmail = email.value.trim();
      const valorCelular = celular.value.trim();
 
-     verificaNomes = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
+     
 
     //verificando se o usuario digitou alguma coisa
      if(valorPrimeiroNome === '')
      {
-        validandoErro(primeiroNome, "Preencha o campo");
+         validandoErro(primeiroNome, "Preencha o campo");
      }
-     else
+
+     //verificando se o que foi digitado foi apenas letras
+     else if (valorPrimeiroNome.match(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/) && valorPrimeiroNome.length <= 20)
      {
-        validandoSucesso(primeiroNome);
+         validandoSucesso(primeiroNome);
+     }
+
+     //verificando se o tamanho da resposta é maior que 20
+     else if (valorPrimeiroNome.length > 20)
+     {
+         validandoErro(primeiroNome, "O máximo de caracteres é 20");
+     }
+
+     else 
+     {
+         validandoErro(primeiroNome, "Digite apenas letras");
+      
      }
 
      if(valorSobreNome === '')
      {
         validandoErro(sobreNome, "Preencha o campo");
      }
+
+     else if (valorSobreNome.match(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/) && valorSobreNome.length <= 20)
+     {
+         validandoSucesso(sobreNome);
+     }
+
+      //verificando se o tamanho da resposta é maior que 20
+     else if (valorSobreNome.length > 20)
+     {
+         validandoErro(sobreNome, "O máximo de caracteres é 20");
+     }
+
      else
      {
-        validandoSucesso(sobreNome);
+         validandoErro(sobreNome, "Digite apenas letras");
      }
 
      if(valorEmail === '')
@@ -54,9 +80,25 @@ function verificaInputs()
      {
         validandoErro(celular, "Preencha o campo");
      }
-     else
+
+     else if(valorCelular.match(/[0-9]/) && valorCelular.length == 12 || valorCelular.length == 11)
      {
         validandoSucesso(celular)
+     }
+
+     else if(valorCelular.length < 11)
+     {
+         validandoErro(celular, "O minimo de digitos minimo é 11");
+     }
+
+     else if(valorCelular.length > 12)
+     {
+         validandoErro(celular, "O máximo de digitos é 12");
+     }
+
+     else
+     {
+        validandoErro(celular, "Digite apenas numeros");
      }
 }
 

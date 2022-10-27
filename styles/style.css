@@ -28,6 +28,7 @@
     --corInputHover: #cfcffd49;
 }
 
+
 /*CONFIGURAÇÕES PADRÃO DE TODAS AS PAGINAS*/
 body
 {
@@ -53,7 +54,7 @@ header img
     width: 30%;
 }
 
-header nav
+header nav 
 {
     display: flex;
     align-items: center;
@@ -90,6 +91,14 @@ header nav ul a:hover
     color: #0130BC;
     transition: all 0.3s;
     font-size: x-large;
+}
+
+.botao-iluminacao
+{
+    padding: 10px 10px;
+    color: var(--corTextoEscuro);
+    font-size: 18px;
+    font-weight: 800;
 }
 
 main h1
@@ -334,6 +343,8 @@ main h1
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 .caixa-input input
@@ -362,7 +373,7 @@ main h1
     visibility: visible;
     position: relative;
     bottom: 50px;
-    left: 198px;
+    left: 200px;
 }
 
 .caixa-input.erro input
@@ -374,8 +385,8 @@ main h1
 {
     visibility: visible;
     position: relative;
-    bottom: 73.5px;
-    left: 197px;
+    bottom: 77px;
+    left: 199px;
 }
 
 .caixa-input small
@@ -507,6 +518,23 @@ footer
     max-width: 150px;
     padding: 0.7em;
 }
+
+/*:root
+{
+    --corHeader: #171834;
+    --corTextoClaro: #171834;
+    --corTextoEscuro:#f6f6fc;
+    --corTextoMain: var(--corTextoClaro);
+    --corCartoes: var(--corTextoClaro);
+    --corBackground: #f6f6fc;
+    --corTextoCartoes: #f6f6fc;
+    --corBotoesHover: #072377;
+    --corSombraNeon: #7a9bfc;
+    --corSombraNeonHover: #218004;
+    --corSombraEscura: var(--corBackground);
+    --corInputHover: #f7e9e9ac;
+}*/
+
 
 /*PARTE DE RESPONSIVIDADE*/
 
