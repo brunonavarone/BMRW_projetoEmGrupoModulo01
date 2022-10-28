@@ -46,6 +46,7 @@ function verificaInputs()
       
      }
 
+     //verificando se o input nao é vazio 
      if(valorSobreNome === '')
      {
         validandoErro(sobreNome, "Preencha o campo");
@@ -71,35 +72,48 @@ function verificaInputs()
      {
         validandoErro(email, "Preencha o campo");
      }
+     
      else
-     {
-        validandoSucesso(email);
+     {  
+        if(valorEmail.match(/[@]/) && valorEmail.match(/[.com]/))
+        {
+            validandoSucesso(email);
+        }
+
+        else
+        {
+            validandoErro(email, "Digite um e-mail válido");
+        }
+
      }
 
      if(valorCelular === '')
      {
         validandoErro(celular, "Preencha o campo");
      }
-
-     else if(valorCelular.match(/[0-9]/) && valorCelular.length == 12 || valorCelular.length == 11)
-     {
-        validandoSucesso(celular)
-     }
-
-     else if(valorCelular.length < 11)
-     {
-         validandoErro(celular, "O minimo de digitos minimo é 11");
-     }
-
-     else if(valorCelular.length > 12)
-     {
-         validandoErro(celular, "O máximo de digitos é 12");
-     }
-
      else
      {
-        validandoErro(celular, "Digite apenas numeros");
+        if(valorCelular.match(/^[0-9]+$/) && valorCelular.length == 11)
+        {
+            validandoSucesso(celular)
+        }
+
+        else if((valorCelular.match(/[0-9]/) && valorCelular.length < 11))
+        {
+            validandoErro(celular, "Digite pelo menos 11 digitos!");
+        }
+
+        else if((valorCelular.match(/[0-9]/) && valorCelular.length > 11))
+        {
+            validandoErro(celular, "Digite apenas 11 digitos!");
+        }
+
+        else
+        {
+            validandoErro(celular, "Digite apenas numeros");
+        }       
      }
+
 }
 
 function validandoErro(input, mensagem)
