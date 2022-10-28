@@ -2,7 +2,7 @@
 @font-face
 {
     font-family:'Ocsquare';
-    src: url(./fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(./fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
+    src: url(../fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(../fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -108,7 +108,7 @@ main h1
 /*PRIMEIRA PAGINA*/
 #body-inicial
 {
-    background-image: url(/image/Background.png);
+    background-image: url(./Image/Background.png);
     background-size: 100vw;
     display: flex;
 }
