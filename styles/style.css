@@ -2,7 +2,7 @@
 @font-face
 {
     font-family:'Ocsquare';
-    src: url(fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
+    src: url(/fonts/TTOctosquaresComp-Regular.otf) format('opentype'), url(/fonts/TTOctosquaresComp-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
