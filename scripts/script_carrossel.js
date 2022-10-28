@@ -7,7 +7,7 @@ setInterval( function(){
 proximaImagem();
 }, 4000)
 
-//funcao que trocar a imagem de forma automática 
+//funcao que troca a imagem de forma automática 
 function proximaImagem()
 {
     contador++;

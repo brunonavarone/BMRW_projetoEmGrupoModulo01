@@ -10,6 +10,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     verificaInputs();
+    validandoEnvio(primeiroNome, sobreNome, email, celular);
 })
 
 function verificaInputs()
@@ -131,4 +132,18 @@ function validandoSucesso(input)
     const caixaInput = input.parentElement;
 
     caixaInput.className = "caixa-input sucesso";
+}
+
+function validandoEnvio(input1 , input2, input3, input4)
+{
+    const caixaInput1 = input1.parentElement;
+    const caixaInput2 = input2.parentElement;
+    const caixaInput3 = input3.parentElement;
+    const caixaInput4 = input4.parentElement;
+
+    if(caixaInput1.className == "caixa-input sucesso" && caixaInput2.className == "caixa-input sucesso" && caixaInput3.className == "caixa-input sucesso" && caixaInput4.className == "caixa-input sucesso")
+    {
+        alert("Formulário enviado com sucesso")
+    }
+
 }
